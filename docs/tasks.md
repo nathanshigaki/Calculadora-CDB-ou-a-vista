@@ -59,7 +59,7 @@ Seguiremos o padrão [Conventional Commits](https://www.conventionalcommits.org/
 - [x] **Task 3.4**: Card de Veredito & Indicadores de Economia
   - **Commit**: `feat(frontend): criar card de veredito com indicacao visual clara da melhor opcao`
   - **Critério**: Card com destaque em verde/azul indicando "Pague À Vista" ou "Parcelado no CDB" e valor economizado.
-- [ ] **Task 3.5**: Tabela Dinâmica Mês a Mês
+- [x] **Task 3.5**: Tabela Dinâmica Mês a Mês
   - **Commit**: `feat(frontend): implementar tabela de evolucao patrimonial e decaimento mensal`
   - **Critério**: Tabela responsiva com saldo investido, rendimento bruto/líquido, IR e parcelas pagas mês a mês.
 - [ ] **Task 3.6**: Gráfico Interativo de Evolução
