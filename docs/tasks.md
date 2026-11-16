@@ -91,6 +91,6 @@ Seguiremos o padrão [Conventional Commits](https://www.conventionalcommits.org/
 - [x] **Task 5.1**: Execução e Validação dos Testes Automatizados
   - **Commit**: `test: validar build e suite de testes do monorepo`
   - **Critério**: `mvn test` com 100% de sucesso e `npm run build` sem erros de tipo.
-- [ ] **Task 5.2**: Walkthrough Final do Projeto
+- [x] **Task 5.2**: Walkthrough Final do Projeto
   - **Commit**: `docs: registrar walkthrough e validacao de cenarios`
   - **Critério**: Documento de entrega final com validação de cenários reais.
