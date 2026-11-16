@@ -47,7 +47,7 @@ Seguiremos o padrão [Conventional Commits](https://www.conventionalcommits.org/
 ---
 
 ## ⚛️ Épico 3: Frontend (React 19 + TypeScript + Tailwind + shadcn/ui)
-- [ ] **Task 3.1**: Setup do Frontend Vite + TypeScript + Tailwind
+- [x] **Task 3.1**: Setup do Frontend Vite + TypeScript + Tailwind
   - **Commit**: `chore(frontend): inicializar projeto vite react typescript e tailwind css`
   - **Critério**: Vite rodando com TypeScript, Tailwind CSS, Lucide Icons e Recharts instalados.
 - [ ] **Task 3.2**: Camada de Serviços e Tipos TypeScript
