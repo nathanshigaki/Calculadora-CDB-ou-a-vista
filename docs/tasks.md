@@ -50,7 +50,7 @@ Seguiremos o padrão [Conventional Commits](https://www.conventionalcommits.org/
 - [x] **Task 3.1**: Setup do Frontend Vite + TypeScript + Tailwind
   - **Commit**: `chore(frontend): inicializar projeto vite react typescript e tailwind css`
   - **Critério**: Vite rodando com TypeScript, Tailwind CSS, Lucide Icons e Recharts instalados.
-- [ ] **Task 3.2**: Camada de Serviços e Tipos TypeScript
+- [x] **Task 3.2**: Camada de Serviços e Tipos TypeScript
   - **Commit**: `feat(frontend): criar tipos sincronizados e servico de api`
   - **Critério**: `types.ts` e `simulationService.ts` integrando com o backend.
 - [ ] **Task 3.3**: Formulário de Simulação com Presets Rápidos
