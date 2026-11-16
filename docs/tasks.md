@@ -31,7 +31,7 @@ Seguiremos o padrão [Conventional Commits](https://www.conventionalcommits.org/
 - [x] **Task 2.2**: Modelos e DTOs de Domínio
   - **Commit**: `feat(backend): criar DTOs de requisicao, resposta e evolucao mensal`
   - **Critério**: `SimulationRequest`, `SimulationResult`, `MonthlyEntry`, `AiAnalysisResponse`, `DefaultRatesResponse`.
-- [ ] **Task 2.3**: Motor Financeiro Determinístico
+- [x] **Task 2.3**: Motor Financeiro Determinístico
   - **Commit**: `feat(backend): implementar servico de calculo financeiro com decaimento e break-even`
   - **Critério**: `FinancialCalculatorService` com taxa efetiva diária/mensal, dedução de parcelas mês a mês, alíquotas regressivas de IR (22,5% a 15%) e cálculo do desconto mínimo de equilíbrio.
 - [ ] **Task 2.4**: Testes Unitários do Motor Financeiro
