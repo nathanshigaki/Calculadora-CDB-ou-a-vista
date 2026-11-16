@@ -25,7 +25,7 @@ Seguiremos o padrão [Conventional Commits](https://www.conventionalcommits.org/
 ---
 
 ## ☕ Épico 2: Backend (Spring Boot 3.4 & Motor Financeiro)
-- [ ] **Task 2.1**: Configuração de Dependências & Propriedades
+- [x] **Task 2.1**: Configuração de Dependências & Propriedades
   - **Commit**: `chore(backend): configurar pom.xml com spring boot, spring ai e application.properties`
   - **Critério**: Maven com `spring-boot-starter-web`, `spring-boot-starter-validation`, `spring-ai-openai`, Lombok e configurações em `application.properties`.
 - [ ] **Task 2.2**: Modelos e DTOs de Domínio
