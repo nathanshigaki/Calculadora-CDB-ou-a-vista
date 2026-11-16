@@ -53,7 +53,7 @@ Seguiremos o padrão [Conventional Commits](https://www.conventionalcommits.org/
 - [x] **Task 3.2**: Camada de Serviços e Tipos TypeScript
   - **Commit**: `feat(frontend): criar tipos sincronizados e servico de api`
   - **Critério**: `types.ts` e `simulationService.ts` integrando com o backend.
-- [ ] **Task 3.3**: Formulário de Simulação com Presets Rápidos
+- [x] **Task 3.3**: Formulário de Simulação com Presets Rápidos
   - **Commit**: `feat(frontend): implementar formulario de simulacao com formatacao BRL e presets`
   - **Critério**: Inputs com máscaras monetárias, seletores de parcelas, juros, CDI e botões de atalho rápido.
 - [ ] **Task 3.4**: Card de Veredito & Indicadores de Economia
