@@ -78,7 +78,7 @@ Seguiremos o padrão [Conventional Commits](https://www.conventionalcommits.org/
 - [x] **Task 4.2**: Dockerfile Multi-stage do Frontend & Nginx
   - **Commit**: `chore(docker): criar dockerfile frontend com nginx e reverse proxy`
   - **Critério**: Build Vite servido por Nginx com proxy para `/api`.
-- [ ] **Task 4.3**: Docker Compose
+- [x] **Task 4.3**: Docker Compose
   - **Commit**: `chore(docker): configurar docker-compose para orquestracao dos servicos`
   - **Critério**: `docker-compose.yml` subindo frontend e backend integrados.
 - [ ] **Task 4.4**: README.md Completo
