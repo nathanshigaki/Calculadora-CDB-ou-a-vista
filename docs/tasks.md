@@ -28,7 +28,7 @@ Seguiremos o padrão [Conventional Commits](https://www.conventionalcommits.org/
 - [x] **Task 2.1**: Configuração de Dependências & Propriedades
   - **Commit**: `chore(backend): configurar pom.xml com spring boot, spring ai e application.properties`
   - **Critério**: Maven com `spring-boot-starter-web`, `spring-boot-starter-validation`, `spring-ai-openai`, Lombok e configurações em `application.properties`.
-- [ ] **Task 2.2**: Modelos e DTOs de Domínio
+- [x] **Task 2.2**: Modelos e DTOs de Domínio
   - **Commit**: `feat(backend): criar DTOs de requisicao, resposta e evolucao mensal`
   - **Critério**: `SimulationRequest`, `SimulationResult`, `MonthlyEntry`, `AiAnalysisResponse`, `DefaultRatesResponse`.
 - [ ] **Task 2.3**: Motor Financeiro Determinístico
