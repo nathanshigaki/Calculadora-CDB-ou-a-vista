@@ -62,7 +62,7 @@ Seguiremos o padrão [Conventional Commits](https://www.conventionalcommits.org/
 - [x] **Task 3.5**: Tabela Dinâmica Mês a Mês
   - **Commit**: `feat(frontend): implementar tabela de evolucao patrimonial e decaimento mensal`
   - **Critério**: Tabela responsiva com saldo investido, rendimento bruto/líquido, IR e parcelas pagas mês a mês.
-- [ ] **Task 3.6**: Gráfico Interativo de Evolução
+- [x] **Task 3.6**: Gráfico Interativo de Evolução
   - **Commit**: `feat(frontend): implementar graficos recharts de saldo e rendimento acumulado`
   - **Critério**: Visualização gráfica comparando a trajetória do saldo investido ao longo das parcelas.
 - [ ] **Task 3.7**: Painel do Consultor IA (Gemini)
