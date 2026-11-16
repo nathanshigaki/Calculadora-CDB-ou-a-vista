@@ -34,7 +34,7 @@ Seguiremos o padrão [Conventional Commits](https://www.conventionalcommits.org/
 - [x] **Task 2.3**: Motor Financeiro Determinístico
   - **Commit**: `feat(backend): implementar servico de calculo financeiro com decaimento e break-even`
   - **Critério**: `FinancialCalculatorService` com taxa efetiva diária/mensal, dedução de parcelas mês a mês, alíquotas regressivas de IR (22,5% a 15%) e cálculo do desconto mínimo de equilíbrio.
-- [ ] **Task 2.4**: Testes Unitários do Motor Financeiro
+- [x] **Task 2.4**: Testes Unitários do Motor Financeiro
   - **Commit**: `test(backend): adicionar testes unitarios do servico financeiro`
   - **Critério**: Testes cobrindo compra à vista com desconto superior, compra parcelada com CDB superior, tabela Price com juros e tabela regressiva de IR.
 - [ ] **Task 2.5**: Integração Spring AI com Google Gemini
