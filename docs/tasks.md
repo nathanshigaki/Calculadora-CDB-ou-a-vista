@@ -72,7 +72,7 @@ Seguiremos o padrão [Conventional Commits](https://www.conventionalcommits.org/
 ---
 
 ## 🐳 Épico 4: Docker & Orquestração
-- [ ] **Task 4.1**: Dockerfile Multi-stage do Backend
+- [x] **Task 4.1**: Dockerfile Multi-stage do Backend
   - **Commit**: `chore(docker): criar dockerfile multi-stage para backend spring boot`
   - **Critério**: Build Maven e execução em OpenJDK 21 slim.
 - [ ] **Task 4.2**: Dockerfile Multi-stage do Frontend & Nginx
