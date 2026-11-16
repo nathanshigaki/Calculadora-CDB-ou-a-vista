@@ -75,7 +75,7 @@ Seguiremos o padrão [Conventional Commits](https://www.conventionalcommits.org/
 - [x] **Task 4.1**: Dockerfile Multi-stage do Backend
   - **Commit**: `chore(docker): criar dockerfile multi-stage para backend spring boot`
   - **Critério**: Build Maven e execução em OpenJDK 21 slim.
-- [ ] **Task 4.2**: Dockerfile Multi-stage do Frontend & Nginx
+- [x] **Task 4.2**: Dockerfile Multi-stage do Frontend & Nginx
   - **Commit**: `chore(docker): criar dockerfile frontend com nginx e reverse proxy`
   - **Critério**: Build Vite servido por Nginx com proxy para `/api`.
 - [ ] **Task 4.3**: Docker Compose
