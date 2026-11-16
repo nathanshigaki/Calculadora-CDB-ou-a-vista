@@ -107,4 +107,8 @@ Seguiremos o padrão [Conventional Commits](https://www.conventionalcommits.org/
 - [x] **Task 6.3**: Redesign Nexora Crimson Dark Mode & Efeitos de Motion
   - **Commit**: `feat(ui): aplicar paleta nexora com tema crimson e animacoes de movimento`
   - **Critério**: Paleta escura obsidian (`#050507`), destaques em vermelho carmesim (`#ef4444`/`#e11d48`), sombras volumétricas e animações suaves de entrada e transição.
+- [x] **Task 6.4**: Reorganização Modular Anti-Scroll do Dashboard
+  - **Commit**: `refactor(ui): redistribuir blocos em grid executivo compacto anti-scroll`
+  - **Critério**: Eliminar hero gigante de 320px, posicionar Veredito e 3 KPIs no topo, Form e Gráfico lado a lado, e Tabela/Gemini com abas/split e rolagem interna.
+
 
