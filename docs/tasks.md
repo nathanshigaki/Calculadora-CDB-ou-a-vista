@@ -37,7 +37,7 @@ Seguiremos o padrão [Conventional Commits](https://www.conventionalcommits.org/
 - [x] **Task 2.4**: Testes Unitários do Motor Financeiro
   - **Commit**: `test(backend): adicionar testes unitarios do servico financeiro`
   - **Critério**: Testes cobrindo compra à vista com desconto superior, compra parcelada com CDB superior, tabela Price com juros e tabela regressiva de IR.
-- [ ] **Task 2.5**: Integração Spring AI com Google Gemini
+- [x] **Task 2.5**: Integração Spring AI com Google Gemini
   - **Commit**: `feat(backend): implementar servico consultor com Gemini AI e fallback resiliente`
   - **Critério**: `GeminiAdvisorService` gerando parecer estruturado sobre break-even e recomendações.
 - [ ] **Task 2.6**: Controladores REST & CORS
