@@ -94,3 +94,17 @@ Seguiremos o padrão [Conventional Commits](https://www.conventionalcommits.org/
 - [x] **Task 5.2**: Walkthrough Final do Projeto
   - **Commit**: `docs: registrar walkthrough e validacao de cenarios`
   - **Critério**: Documento de entrega final com validação de cenários reais.
+
+---
+
+## 🎨 Épico 6: Refinamentos Visuais & Suporte ao VS Code Monorepo
+- [x] **Task 6.1**: Ajuste de Parâmetros Econômicos & Remoção de Presets
+  - **Commit**: `feat: atualizar taxa selic para 13.75%, aplicar modo escuro e remover simulacoes rapidas`
+  - **Critério**: Taxa padrão Selic atualizada para 13,75% a.a., remoção dos cartões de presets rápidos e Docker com fallback para chave Gemini.
+- [x] **Task 6.2**: Suporte a Monorepo no VS Code (Classpath & Maven Root)
+  - **Commit**: `chore(build): configurar pom.xml raiz e settings do vscode para resolucao de classpath`
+  - **Critério**: Adicionar `pom.xml` agregador na raiz e atualizar `.vscode/settings.json` para eliminar avisos de `is not on the classpath` e `non-project file`.
+- [x] **Task 6.3**: Redesign Nexora Crimson Dark Mode & Efeitos de Motion
+  - **Commit**: `feat(ui): aplicar paleta nexora com tema crimson e animacoes de movimento`
+  - **Critério**: Paleta escura obsidian (`#050507`), destaques em vermelho carmesim (`#ef4444`/`#e11d48`), sombras volumétricas e animações suaves de entrada e transição.
+
