@@ -65,7 +65,7 @@ Seguiremos o padrão [Conventional Commits](https://www.conventionalcommits.org/
 - [x] **Task 3.6**: Gráfico Interativo de Evolução
   - **Commit**: `feat(frontend): implementar graficos recharts de saldo e rendimento acumulado`
   - **Critério**: Visualização gráfica comparando a trajetória do saldo investido ao longo das parcelas.
-- [ ] **Task 3.7**: Painel do Consultor IA (Gemini)
+- [x] **Task 3.7**: Painel do Consultor IA (Gemini)
   - **Commit**: `feat(frontend): criar componente do consultor financeiro com gemini ai`
   - **Critério**: Exibição da análise analítica da IA com cálculo do ponto de equilíbrio (*break-even*).
 
