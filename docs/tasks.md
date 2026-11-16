@@ -81,7 +81,7 @@ Seguiremos o padrão [Conventional Commits](https://www.conventionalcommits.org/
 - [x] **Task 4.3**: Docker Compose
   - **Commit**: `chore(docker): configurar docker-compose para orquestracao dos servicos`
   - **Critério**: `docker-compose.yml` subindo frontend e backend integrados.
-- [ ] **Task 4.4**: README.md Completo
+- [x] **Task 4.4**: README.md Completo
   - **Commit**: `docs: adicionar readme com instrucoes de execucao local e docker`
   - **Critério**: Guia passo a passo com exemplos e screenshots/tabelas.
 
