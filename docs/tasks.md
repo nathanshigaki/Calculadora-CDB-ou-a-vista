@@ -56,7 +56,7 @@ Seguiremos o padrão [Conventional Commits](https://www.conventionalcommits.org/
 - [x] **Task 3.3**: Formulário de Simulação com Presets Rápidos
   - **Commit**: `feat(frontend): implementar formulario de simulacao com formatacao BRL e presets`
   - **Critério**: Inputs com máscaras monetárias, seletores de parcelas, juros, CDI e botões de atalho rápido.
-- [ ] **Task 3.4**: Card de Veredito & Indicadores de Economia
+- [x] **Task 3.4**: Card de Veredito & Indicadores de Economia
   - **Commit**: `feat(frontend): criar card de veredito com indicacao visual clara da melhor opcao`
   - **Critério**: Card com destaque em verde/azul indicando "Pague À Vista" ou "Parcelado no CDB" e valor economizado.
 - [ ] **Task 3.5**: Tabela Dinâmica Mês a Mês
