@@ -30,7 +30,7 @@ public class SimulationRequest {
 
     @NotNull(message = "A taxa anual do CDI é obrigatória.")
     @DecimalMin(value = "0.1", message = "A taxa anual do CDI deve ser maior que zero.")
-    private BigDecimal taxaCdiAnual = new BigDecimal("11.25");
+    private BigDecimal taxaCdiAnual = new BigDecimal("13.75");
 
     private Boolean considerarIrRegressivo = true;
 

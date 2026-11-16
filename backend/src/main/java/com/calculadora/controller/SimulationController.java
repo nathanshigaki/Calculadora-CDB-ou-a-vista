@@ -21,7 +21,7 @@ public class SimulationController {
     private final FinancialCalculatorService calculatorService;
     private final GeminiAdvisorService advisorService;
 
-    @Value("${app.financial.default-selic:11.25}")
+    @Value("${app.financial.default-selic:13.75}")
     private BigDecimal defaultSelic;
 
     @Value("${app.financial.default-cdb-percent:105.0}")

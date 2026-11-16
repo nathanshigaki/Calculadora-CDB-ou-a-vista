@@ -42,7 +42,7 @@ export const simulationService = {
     if (!res.ok) {
       // Fallback padrão se endpoint offline
       return {
-        taxaCdiAnualPadrao: 11.25,
+        taxaCdiAnualPadrao: 13.75,
         percentualCdiMercadoPago: 105.0,
       };
     }

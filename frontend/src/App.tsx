@@ -6,7 +6,7 @@ import { VerdictCard } from './components/VerdictCard';
 import { EvolutionTable } from './components/EvolutionTable';
 import { EvolutionChart } from './components/EvolutionChart';
 import { GeminiAdvisorCard } from './components/GeminiAdvisorCard';
-import { Wallet, Sparkles, HelpCircle, Layers } from 'lucide-react';
+import { Wallet, Sparkles, HelpCircle, AlertTriangle } from 'lucide-react';
 
 const DEFAULT_SIMULATION: SimulationRequest = {
   valorTotal: 1200,
@@ -15,7 +15,7 @@ const DEFAULT_SIMULATION: SimulationRequest = {
   comJuros: false,
   taxaJurosParcelamento: 0,
   percentualCdi: 105,
-  taxaCdiAnual: 11.25,
+  taxaCdiAnual: 13.75, // Atualizado para Selic atual
   considerarIrRegressivo: true,
 };
 
@@ -48,7 +48,11 @@ export default function App() {
       }
     } catch (err: any) {
       console.error(err);
-      setError(err.message || 'Erro inesperado ao calcular a simulação.');
+      let msg = err.message || 'Erro inesperado ao calcular a simulação.';
+      if (msg.includes('<!DOCTYPE') || msg.includes('502') || msg.includes('unavailable')) {
+        msg = 'O servidor backend ainda está iniciando ou indisponível. Aguarde alguns segundos e tente novamente.';
+      }
+      setError(msg);
       setIsLoading(false);
       setIsAiLoading(false);
     }
@@ -59,27 +63,30 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 pb-16">
+    <div className="min-h-screen bg-slate-950 text-slate-100 pb-16 selection:bg-sky-500 selection:text-white">
       {/* Navbar Superior */}
-      <header className="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm backdrop-blur-md bg-white/90">
+      <header className="bg-slate-900/90 border-b border-slate-800 sticky top-0 z-30 shadow-md backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="p-2 bg-sky-600 text-white rounded-xl shadow-sm">
-              <Wallet className="w-6 h-6" />
+            <div className="p-2.5 bg-gradient-to-tr from-sky-500 to-indigo-600 text-white rounded-xl shadow-lg shadow-sky-500/20">
+              <Wallet className="w-5 h-5" />
             </div>
             <div>
-              <h1 className="text-lg font-black tracking-tight text-slate-800">
-                Calculadora de Economicidade
+              <h1 className="text-lg font-black tracking-tight text-white flex items-center space-x-2">
+                <span>Calculadora de Economicidade</span>
+                <span className="hidden md:inline-block px-2 py-0.5 text-[10px] bg-slate-800 border border-slate-700 text-sky-400 font-semibold rounded-md">
+                  Selic 13,75% a.a.
+                </span>
               </h1>
-              <p className="text-[11px] font-medium text-slate-500">
-                À Vista com Desconto vs. CDB Mercado Pago
+              <p className="text-[11px] font-medium text-slate-400">
+                À Vista com Desconto vs. CDB Diário Mercado Pago (105% do CDI)
               </p>
             </div>
           </div>
 
           <div className="flex items-center space-x-2">
-            <span className="hidden sm:inline-flex items-center space-x-1 px-2.5 py-1 bg-amber-50 border border-amber-200 text-amber-800 rounded-lg text-xs font-semibold">
-              <Sparkles className="w-3.5 h-3.5 text-amber-600" />
+            <span className="inline-flex items-center space-x-1.5 px-3 py-1 bg-indigo-950/70 border border-indigo-800/60 text-indigo-300 rounded-lg text-xs font-semibold">
+              <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
               <span>Spring Boot + Spring AI + Gemini</span>
             </span>
           </div>
@@ -89,8 +96,9 @@ export default function App() {
       {/* Conteúdo Principal */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 space-y-8">
         {error && (
-          <div className="p-4 bg-rose-50 border border-rose-200 text-rose-800 rounded-xl text-sm font-medium">
-            {error}
+          <div className="p-4 bg-rose-950/60 border border-rose-800/80 text-rose-200 rounded-2xl text-sm font-medium flex items-center space-x-3 shadow-lg">
+            <AlertTriangle className="w-5 h-5 text-rose-400 flex-shrink-0" />
+            <span>{error}</span>
           </div>
         )}
 
@@ -104,13 +112,13 @@ export default function App() {
             />
 
             {/* Dica Informativa */}
-            <div className="bg-sky-50/70 border border-sky-100 rounded-2xl p-5 text-xs text-sky-900 space-y-2">
-              <h4 className="font-bold flex items-center space-x-1.5">
-                <HelpCircle className="w-4 h-4 text-sky-600" />
+            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 text-xs text-slate-300 space-y-2 shadow-sm">
+              <h4 className="font-bold text-sky-400 flex items-center space-x-2">
+                <HelpCircle className="w-4 h-4 text-sky-400" />
                 <span>Como funciona o cálculo?</span>
               </h4>
-              <p className="leading-relaxed text-sky-800">
-                Consideramos que o comprador possui o montante total da compra aplicado no CDB diário (ex: 105% do CDI Mercado Pago).
+              <p className="leading-relaxed text-slate-400">
+                Consideramos que o comprador possui o montante total da compra aplicado no CDB diário (105% do CDI Mercado Pago, com Selic base de 13,75% a.a.).
                 A cada mês, o saldo rende juros líquidos (já deduzido o IR regressivo de 22,5% a 15%) e deduz-se o valor da parcela.
               </p>
             </div>
@@ -140,7 +148,7 @@ export default function App() {
                 />
               </>
             ) : (
-              <div className="py-20 text-center text-slate-400">
+              <div className="py-20 text-center text-slate-500">
                 Carregando simulação financeira...
               </div>
             )}
