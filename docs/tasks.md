@@ -40,7 +40,7 @@ Seguiremos o padrão [Conventional Commits](https://www.conventionalcommits.org/
 - [x] **Task 2.5**: Integração Spring AI com Google Gemini
   - **Commit**: `feat(backend): implementar servico consultor com Gemini AI e fallback resiliente`
   - **Critério**: `GeminiAdvisorService` gerando parecer estruturado sobre break-even e recomendações.
-- [ ] **Task 2.6**: Controladores REST & CORS
+- [x] **Task 2.6**: Controladores REST & CORS
   - **Commit**: `feat(backend): implementar controller de simulacao e configuracao de CORS`
   - **Critério**: Endpoints `POST /api/simulation/calculate`, `POST /api/simulation/ai-analysis` e `GET /api/simulation/defaults`.
 
